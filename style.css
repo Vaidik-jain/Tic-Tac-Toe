@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgba(64, 173, 91, 0.767);
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 72vh;
+    width: 32vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-box{
+    height: 62vh;
+    width: 29vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    height: 19vh;
+    width: 9vw;
+    border: none;
+    border-radius: 10px;
+}
