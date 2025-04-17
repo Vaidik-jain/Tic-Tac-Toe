@@ -55,7 +55,7 @@ body{
     color: #ffffc7;
     font-size: 8vmin;
 }
-.wmsg{
+.showmsg{
     height: 99vmin;
     display: flex;
     justify-content: center;
@@ -65,7 +65,8 @@ body{
 }
 .hide{
     display: none;
-}#new-btn{
+}
+#new-btn{
     padding: 1rem;
     font-size: 1.25rem;
     background-color: #191913;
