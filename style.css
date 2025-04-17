@@ -2,18 +2,21 @@
     margin: 0;
     padding: 0;
 }
+
 body{
-    background-color: #6ae423;
+    background-color: #e4e123;
     text-align: center;
 }
-.container{
+
+.big-box{
     height:70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5vmin;
 }
-.game{
+
+.game-box{
     height: 60vmin;
     width: 60vmin;
     display: flex;
@@ -22,6 +25,7 @@ body{
     align-items: center;
     gap: 1.5vmin;
 }
+
 .box{
     height: 18vmin;
     width: 18vmin;
@@ -29,32 +33,38 @@ body{
     border: none;
     box-shadow: 0 0 1 rem rgba(0, 0,0, 0.3);
     font-size: 8vmin;
-    color: #b0413e;
+    color: #000000;
     background-color: #ffffc7;
     
 }
+
 .box:hover{
     border: 2.5px solid white;
     background-color:#ffff90;
+    cursor: pointer;
 }
+
 #reset-btn{
+    width: 8rem;
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #000000;
     color: #fff;
     border-radius: 1rem;
     border: none;
 }
+
 #reset-btn:hover{
-    
-    
     background-color: #000000be;
-    color: black;
+    /* color: black; */
+    cursor: pointer;
 }
+
 #msg{
     color: #ffffc7;
     font-size: 8vmin;
 }
+
 .showmsg{
     height: 99vmin;
     display: flex;
@@ -63,9 +73,11 @@ body{
     flex-direction: column;
     gap: 4rem;
 }
+
 .hide{
     display: none;
 }
+
 #new-btn{
     padding: 1rem;
     font-size: 1.25rem;
@@ -74,9 +86,10 @@ body{
     border-radius: 1rem;
     border: none;
 }
+
 #new-btn:hover{
     border: 1.5px solid white;
-    background-color: #1b7288;
-    color: black;
-
+    background-color: #00000000;
+    /* color: black; */
+    cursor: pointer;
 }
