@@ -37,7 +37,7 @@ const checkwinner=()=>{
         let  pos3val=boxes[pattern[2]].innerText;
         if(pos1val!=""&&pos2val!=""&&pos3val!=""){
             if(pos1val==pos2val&&pos2val==pos3val){
-                console.log(pos1val);
+                // console.log(pos1val);
               showwinner(pos1val);
             }
         }
@@ -47,21 +47,12 @@ const checkwinner=()=>{
 const showwinner=(winner)=>{
     msg.innerText=`${winner} is the winner!!`;
     msgcontainer.classList.remove("hide");
-    disableboxes();
 };
-
-const disableboxes = ()=>{
-    for(let box of boxes){
-        box.disabled="true";
-    }
-};
-
 const resetgame=()=>{
     turno=true;
     enableboxes ();
     msgcontainer.classList.add("hide");
 };
-
 const enableboxes =() =>{
     for( let box of boxes){
         box.disabled=false;
@@ -69,6 +60,5 @@ const enableboxes =() =>{
         
     }
 };
-
 newgamebtn.addEventListener("click",resetgame);
 resetbtn.addEventListener("click",resetgame);
